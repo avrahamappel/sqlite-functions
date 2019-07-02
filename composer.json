@@ -1,0 +1,13 @@
+{
+    "name": "appel/laravel-sqlite-functions",
+    "description": "A polyfill for various SQL functions that SQLite doesn't natively support.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "avrahamappel",
+            "email": "aappel248@gmail.com"
+        }
+    ],
+    "require": {}
+}
