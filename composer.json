@@ -1,5 +1,5 @@
 {
-    "name": "appel/laravel-sqlite-functions",
+    "name": "appel/sqlite-functions",
     "description": "A polyfill for various SQL functions that SQLite doesn't natively support.",
     "type": "library",
     "license": "MIT",
@@ -9,5 +9,20 @@
             "email": "aappel248@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "php": ">=7",
+        "illuminate/database": "5.*",
+    },
+    "autoload": {
+        "psr-4": {
+            "Appel\\SqliteFunctions\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Appel\\SqliteFunctions\\ServiceProvider"
+            ]   
+        }
+    }
 }
