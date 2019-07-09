@@ -27,7 +27,7 @@ class ServiceProvider extends BaseProvider
      */
     protected function registerFunctions(): void
     {
-        if ($this->app->environment('testing') && $this->app['db']->getDriverName() == 'sqlite') {
+        if ($this->app['db']->getDriverName() == 'sqlite') {
             (new FunctionRegistrar)->register($this->app['db']->getPdo(), config('sqlite-functions.driver_to_mimic'));
         }
     }

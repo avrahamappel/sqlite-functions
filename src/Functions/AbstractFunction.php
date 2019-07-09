@@ -25,6 +25,9 @@ abstract class AbstractFunction
         throw new Exception('Postgres has not been implemented for this function.');
     }
 
+    /**
+     * @return string
+     */
     public function getName(): string
     {
         return Str::snake(class_basename($this));
