@@ -17,7 +17,7 @@ class ServiceProvider extends BaseProvider
             ]);
         }
 
-	    $this->mergeConfigFrom(__DIR__.'/../config/sqlite-functions.php');
+	    $this->mergeConfigFrom(__DIR__.'/../config/sqlite-functions.php', 'sqlite-functions');
 
         $this->registerFunctions();
     }
