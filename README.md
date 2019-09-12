@@ -4,4 +4,10 @@ This is a little PHP package that adds common SQL functions to SQLite. Useful wh
 
 It still needs a lot of work, so all PRs are welcome.
 
+# Installation
+
+```bash
+composer require --dev appel/sqlite-functions
+```
+
 If you're using Laravel, the service provider and function macros will be registered automatically for you.
