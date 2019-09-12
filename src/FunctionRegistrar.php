@@ -10,6 +10,7 @@ class FunctionRegistrar
         Functions\Curdate::class,
         Functions\DateFormat::class,
         Functions\Substring::class,
+        Functions\Regexp::class,
     ];
 
     /**
