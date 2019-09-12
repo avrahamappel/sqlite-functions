@@ -20,7 +20,7 @@ abstract class AbstractFunction
      * @return \Closure
      * @throws \Exception
      */
-    public function postgres()
+    public function pgsql()
     {
         throw new Exception('Postgres has not been implemented for this function.');
     }
