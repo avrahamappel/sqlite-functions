@@ -2,7 +2,7 @@
 
 namespace Appel\SqliteFunctions\Functions;
 
-use Closure
+use Closure;
 
 class Rand extends AbstractFunction
 {
@@ -13,8 +13,8 @@ class Rand extends AbstractFunction
      */
     public function mysql(): Closure
     {
-        return function ($seed) {
-            return mt_rand() / mt_getrandmax();
+        return function ($seed = null) {
+            return mt_srand($seed) / mt_getrandmax();
         };
     }
 }

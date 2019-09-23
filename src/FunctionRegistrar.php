@@ -9,8 +9,9 @@ class FunctionRegistrar
     protected $functions = [
         Functions\Curdate::class,
         Functions\DateFormat::class,
-        Functions\Substring::class,
+        Functions\Rand::class,
         Functions\Regexp::class,
+        Functions\Substring::class,
     ];
 
     /**
